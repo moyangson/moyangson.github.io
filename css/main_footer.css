@@ -1,0 +1,144 @@
+footer{
+    width:100%;
+    background-color: #f8f9fa;
+}
+.footer_wrap{
+    max-width: 1600px;
+    margin:0 auto;/* p의 정렬이 가운데라 가운데 정렬을 해준것 */
+    padding:74px 0 70px;
+    text-align: center;
+    border: 1px solid orange;
+}
+.footer_logo{
+    position: absolute;
+    width: 63px;
+    height: 13px;
+    border:1px solid red;
+    left:30px;
+    top:76px;
+    background: url(../img/footer_logo.png) no-repeat;   
+    -webkit-background: url(../img/footer_logo.png) no-repeat;   
+    background-size: 63px 13px;
+}
+.footer_menu{
+    position: absolute;
+    left: 105px;
+    top:74px;
+    font-size:0;/* 공백문자 없애기 위해 */
+
+}
+.footer_menu li{
+    margin:0 10px;
+    display: inline-block;
+    font-size: 14px;
+    /* border:1px solid royalblue; */
+    /* border-right: 1px solid #878888; */
+    position: relative;
+    border: 1px solid royalblue;
+
+}
+.footer_menu li::before{
+    content:'';
+    position: absolute;
+    top:4px;
+    left: -10px;
+    width: 1px;
+    height: 12px;
+    border:1px solid rebeccapurple;
+    background-color:#878890 ;
+    /* 선이 길거나 짧으면 가상으로 만들어 줘야함 */
+
+}
+.footer_menu li:first-child::before{
+    display: none;/* 선 없애준것 */
+}
+.footer_menu a{
+    color:#878890;
+}
+.affiliate_box{
+    position: absolute;
+    top:74px;
+    right:30px;
+    border:1px solid red;
+}
+.btn_affiliate{
+    padding-right: 26px;/* ul */
+    position: relative;
+
+}
+.btn_affiliate::before{
+    content:'';
+    position: absolute;
+    right:0;
+    width:16px;
+    height:16px;
+    border:1px solid red;
+    background: url(../img/sprite.png) no-repeat;
+    background-size: 474px 1250px;
+    -webkit-background-size: 474px 1250px;
+    background-position:-222px -26px ;    
+}
+.affiliate_list{
+    position: absolute;
+    left:0;
+    border:1px solid #dfe0e1;
+    bottom:0;
+    width:200px;
+    text-align: left;
+    padding: 27px 0 25px;
+    background-color: #fff;
+    display: none
+}
+
+.affiliate_item{
+    margin:13px 0px;
+    border:1px solid red;
+   
+}
+.affiliate_item:first-child{
+    margin-top:0;
+}
+.affiliate_item a{
+    display: block;
+    padding:0 24px;
+    width: 100%;
+    color:#878890;
+}
+.affiliate_item a span{
+    position: relative;
+    border: 1px solid black;
+}
+.affiliate_item a span:before{
+    display: none;
+    content:'';
+    position: absolute;
+    clear: both;
+    right:-25px;
+    top:-1px;
+    width: 18px;
+    height: 18px;
+    border:1px solid tomato;
+    background: url(../img/sprite.png) no-repeat;
+    background-size: 474px 1250px;
+    -webkit-background-size: 474px 1250px;
+    background-position:-104px -68px ;    
+
+}
+/* hover, focus */
+.affiliate_item a:hover, 
+.affiliate_item a:focus{
+    color:#00b843;
+
+}
+.affiliate_box:hover .affiliate_list
+{
+    display: block;
+}
+.affiliate_item > a:hover span:before,
+.affiliate_item > a:focus span:before{
+    display: block;
+}
+/* 요즘방식
+-webkit-transition:all .5s ease;
+transition:all .5s ease; 
+옛날 브라우저를 위해 지양하자*/

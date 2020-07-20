@@ -1,0 +1,513 @@
+ 
+/*헤더 박스 레이아웃 */
+header{
+    z-index: 500;
+}
+.header_wrap{
+    max-width:1600px;
+    margin: 0 auto;
+    /* border:1px solid red; */
+    text-align: center;
+    position: relative;
+}
+.header_wrap.hide {
+    position: fixed;
+    top:-80px; left:0; right:0; transition: top 0.5s ease;}
+/* drop menu */
+.gnb_dropmenu_wrap{
+    display: none;
+    min-width:1100px ;
+    height: 276px;
+    background-color:rgb(30,197,69);
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top:80px;
+    text-align: center;
+    font-size: 0;/*ul*/
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);/* 입체감을 주기위해 쉐도우주고 투명도를 준다.*/
+} 
+
+/* 드롭다운메뉴 스타일 시작 */
+.gnb_dropmenu>li{
+    margin:0 0 5px;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.gnb_dropmenu>li a{
+    color:#fff;
+    font-size: 15px;    
+}
+.gnb_dropmenu>li .depth_blank{
+    margin-bottom: 14px;
+}
+.classify{
+    margin-bottom: 17px;
+    border-top:1px solid rgba(255, 255, 255, 0.3);
+    padding-top:22px;
+}
+.classify1>li:first-child{
+    padding-top:0;
+    border-top:0;
+}
+a.gnb_dropmenu_item{
+    display: block;
+    padding-left: 28px;
+}
+/* 메뉴_라인생성 */
+.gnb_dropmenu_item .depth{
+    position: relative;
+}
+.gnb_dropmenu_item strong{
+    position: relative;
+}
+.gnb_dropmenu_item .depth::after,
+.gnb_dropmenu_item strong::after{
+    content: '';
+    position: absolute;
+    border-bottom:1px solid rgba(255,255,255,0);
+    left:0;
+    bottom:0;
+    right:100%;
+    transition: all 0.3s ease-in-out;
+}
+.gnb_dropmenu_item .depth:hover::after,
+.gnb_dropmenu_item strong:hover::after{
+    border-bottom:1px solid rgba(255,255,255,1);
+    left:0;
+    right:0; 
+}
+/* 메뉴_라인생성 끝 */
+.gnb_dropmenu_item .depth{
+    color:rgba(255,255,255,0.7);/* 투명도를 줘서 흐리게 해줌 */
+}
+.gnb_dropmenu_item .depth:hover{
+    color:rgba(255,255,255,1);/* hover시 투명도를 높여줘서 잘보이게 */  
+    transition: underline ease-in-out 3s;
+}
+
+
+.gnb_dropmenu_wrap >li{
+    display: inline-block;
+    width: 190px;
+    height: 276px;
+    padding-top:28px;
+    font-size: 1rem;/*부모가 폰트가 0이라서 폰트 사이즈를 지정해 줘야 한다. */
+    vertical-align: top;/*글자가 위로 올라가 붙도록 */
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+/* li의 오른쪽 라인 생성 */
+.gnb_dropmenu_wrap >li:last-child{border-right: 1px solid rgba(255, 255, 255, 0.3);}
+
+.gnb_dropmenu_wrap >li:hover{
+    background-color:#0fb93c;/*hover됐을때 색이 바뀜*/
+}
+.gnb_menu_list:hover .gnb_dropmenu_wrap {
+    display: block;
+}
+/*로고 영역*/
+h1.header_logo{
+    /* border:1px solid blue; */
+    width:87px;
+    height: 17px;
+    background:url("../img/header_logo.png") no-repeat;
+    background-size: cover;
+    position: absolute;
+    top:30px;
+    left: 30px;
+    
+}
+.header_logo a{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+/*메인메뉴 영역*/
+
+nav{
+    /* border:1px solid red; */
+    display: inline-block;
+}
+.gnb_menu_list, li.gnb_menu_list_recruit{
+    display: inline-block;
+    font-size: 1rem;
+}
+li.gnb_menu_list_recruit > a{
+    padding-right:27px;
+}
+li.gnb_menu_list_recruit > a:hover::after{
+    content: '';
+    display: block;
+    position: absolute;
+    /* border:1px solid red; */
+    right: 0;
+    bottom: 26px;
+    width:23px;
+    height:23px;
+    /* border:1px solid tomato; */
+    background: url(../img/sprite.png) no-repeat;
+    background-size:474px 1250px;
+    -webkit-background-size: 474px 1250px;
+    background-position: -57px 0;  
+
+}
+a.gnb_menu_item:before{
+    content:'';/* content 없음 */
+    position: absolute;
+    left: -1px;/* a를 기준으로 없어짐 */
+    bottom: 20px;/* 이 위치에서 대기 */
+    width: calc(100% + 2px);/* a태그 기준으로 2px만 더 가자 */
+    height: 2px;
+    background-color: #1ec545;
+      /* 트랜지션  */
+    -webkit-transform-origin: 0 0; 
+    transform-origin: 0 0;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);/* x방향의 스케일은 0이다. widht가 늘어나겠구나 생각 */
+    transition: transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1), -webkit-transform 0.3s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+a.gnb_menu_item:before .gnb_menu_list_recruit span::after{
+    display: block;
+}
+.gnb_dropmenu .item_bg{
+    position: relative;
+    /* border:1px solid red; */
+}
+.gnb_dropmenu .item_bg::after{
+  content: '';
+  display: block;
+  position: absolute;
+  /* border:1px solid rebeccapurple; */
+  bottom:0;
+  left:86px;
+  width: 20px;
+  height: 20px;
+  /* border:1px solid blue; */
+  background:url(../img/sprite.png) no-repeat;
+  background-size:474px 1250px;
+  -webkit-background-size: 474px 1250px;
+  background-position:-79px 0;
+}
+a.gnb_menu_item{
+    display: block;
+    margin:0 30px;
+    padding:30px 0 30px;
+    /*5.28메인메뉴 폰트 스타일*/
+    font-size: 15px;
+    color:#333;
+    position: relative;
+    -webkit-font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+
+}
+/* ::befor:하기전/::after:한후 */
+.gnb_menu .gnb_menu_list:hover .gnb_menu_item:before, 
+.gnb_menu .gnb_menu_list .gnb_menu_item:focus:before, 
+.gnb_menu .gnb_menu_list_recruit:hover .gnb_menu_item:before, 
+.gnb_menu .gnb_menu_list_recruit .gnb_menu_item:focus:before{
+    transform:scaleX(1);
+    -webkit-transform: scaleX(1);
+}
+.gnb_menu_item span{
+    position: relative; 
+}
+.gnb_menu_item span::before{
+    display: none;
+    content:'';
+    position: absolute;
+    right:-25px;
+    top:-1px;
+    width:18px;
+    height: 18px;
+    /* border:1px solid tomato; */
+    background: url(../img/sprite.png) no-repeat;
+    background-size:474px 1250px;
+    -webkit-background-size: 474px 1250px;
+    background-position: -104px -68px;  
+}
+.gnb_menu_item li > a:hover span::after,
+.gnb_menu_item li > a:focus span::after
+{
+    display: none;
+    
+}
+.gnb_menu_item li > a:hover span::before,
+.gnb_menu_item li > a:focus span::before
+{
+   display: block;
+}
+
+/* util */
+.header_util{
+    /* float: right; */
+    /* margin:30px 25px 0 0 ; */
+    width: 144px;
+    position: absolute;
+    top:30px;
+    right:25px;
+    
+    /* border:1px solid blue; */
+}
+
+.header_util .header_lang{
+    /* display: inline-block; */
+    /* vertical-align: middle; */
+    margin: -3px 41px 0 0;
+    font-size: 13px;
+    position: relative;
+    z-index: 100;
+    /* border:1px solid green; */
+}
+.header_util .header_lang a{
+    color: #333; 
+}
+.header_util .header_lang a:last-child{
+    color:rgb(133, 131, 131);
+    padding-left: 7px;
+}
+.header_util .header_lang a:hover{
+    color:#333;
+}
+.header_util .header_lang a:first-child{
+ display: inline-block;
+ border-right:1px solid rgba(0,0,0,0.5);
+ padding-right: 10px;
+ line-height: 10px;
+}
+.header_util .header_lang a:first-child:hover{
+    color:rgb(133, 131, 131);
+}
+.header_util.on .header_lang a {color:white}
+
+ul.gnb_menu{
+    font-size:0;
+    text-align: center;/*마진을 줬지만 한번더 줘서 센터로 맞춤.*/
+}
+
+.header_util .btn_sitemap {
+    position: absolute;
+    width:24px;
+    height:23px;
+    top:0;
+    right:0;
+    border: none;
+    z-index: 100;
+}
+
+.header_util .btn_sitemap .btn_line {
+    margin-bottom: 4px;
+    display: block;
+    width: 100%;
+    height: 2px;
+   background-color: #333;
+    transition: transform .3s ease;
+
+}
+.header_util .btn_sitemap:hover .btn_line {
+    background-color: #00c73c;
+    position: relative;
+}
+
+
+
+/* 버튼 눌렀을때 */
+/* 로고 */
+.header_util.on .header_logo{
+ background:url("../img/header_logo_v2.png") no-repeat;
+}
+
+.header_util .btn_blind{
+    display: none;
+    font-family: "NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    line-height: 1.2;
+  
+}
+.header_util.on .btn_blind{
+    display: block;
+    position: fixed;
+    /* opacity: 0.5; */
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #00c73c;
+}
+
+/* 메뉴 */
+.header_util .btn_blind .header_wrap nav{
+   /*  border:1px solid red; */
+    top: 80px;
+    left:0;
+    right: 0;
+    position: absolute;
+    max-width:1280px;
+    display: block;
+    padding:15px 35px 0 35px;
+    margin:0 auto; 
+    font-size: 20px;
+}
+
+.header_util .btn_blind .btn_gnb_menu{
+position: relative;
+/* border:1px solid red; */
+float: left;
+width:170px;
+color:#fff;
+text-align: left;
+margin:10px 0 0 30px;
+}
+.header_util .btn_blind .btn_gnb_menu:nth-child(2){
+    width:200px;
+}
+.header_util .btn_blind .btn_gnb_menu:first-child{
+    margin-left: 0;
+}
+.header_util .btn_blind .btn_gnb_menu::before{
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    top:45px;
+    width:10px;
+    height:2px;
+    background-color: #fff; 
+    /* border:1px solid blue;    */
+}
+.header_util .btn_gnb_menu > a{
+    font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    display: block;
+    color:#fff;
+    font-size:20px;
+    padding-bottom: 25px;
+}
+
+.header_util .btn_gnb_menu_list {
+    padding-top:20px;
+}
+
+.header_util .btn_gnb_menu_list .item_bg{
+     position: relative;
+     /* border:1px solid red; */
+}
+.header_util .btn_gnb_menu_list .item_bg::after{
+  content: '';
+  display: block;
+  position: absolute;
+  margin-right: -28px;
+  top:5px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  /* border:1px solid blue; */
+  background:url(../img/sprite.png) no-repeat;
+  background-size:474px 1250px;
+  -webkit-background-size: 474px 1250px;
+  background-position:-79px 0;
+}
+.header_util .btn_gnb_menu_list > li > a > span{
+    font-family: "NanumSquare-L", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    line-height: 1.2;
+    color:rgba(255,255,255,0.8);
+    font-size: 14px;
+    padding-top:10px;
+    position: relative;  
+}
+.header_util .btn_gnb_menu_list > li > a > span:hover{
+     color:rgba(255,255,255,1);
+}
+.header_util .btn_gnb_menu_list > li > a > strong{
+    position: relative;
+}
+
+/* 클릭시 메뉴 라인 생성 */
+.header_util .btn_gnb_menu_list > li > a > span::after,
+.header_util .btn_gnb_menu_list > li > a > strong::after{
+    content: '';
+    position: absolute;
+    border-bottom:1px solid rgba(255,255,255,0);
+    left:0;
+    bottom:0;
+    right:100%;
+    transition: all 0.3s ease-in-out;
+}
+.header_util .btn_gnb_menu_list > li > a:hover > span::after,
+.header_util .btn_gnb_menu_list > li >  a:hover > strong::after
+ {
+    border-bottom:1px solid rgba(255,255,255,1);
+    left:0;
+    right:0;
+}
+/* 클릭시 메뉴 라인 생성 끝 */
+
+/* .header_util .btn_gnb_menu_list > li 
+   {color:rgba(255,255,255,1);/* hover시 투명도를 높여줘서 잘보이게 */
+    /* text-decoration: underline;
+    transition: underline ease-in-out 3s;} */
+
+.header_util .btn_gnb_menu_list > li > a {
+    display: inline-block;
+    color:#fff;
+    font-size: 15px;
+    font-weight:800;
+    padding-top:5px;
+}
+.header_util .btn_gnb_menu_list_strong{
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+/* 버튼 */
+
+.header_util.on .btn_sitemap .btn_line {
+    background-color: white;
+}
+.header_util.on .header_lang a:hover{
+    color:#fff;
+}
+.header_util.on .header_lang a:last-child{
+    opacity: 0.8;
+}
+.header_util.on .header_lang a:first-child{
+border-right:1px solid rgba(256,256,256,0.8);
+}
+.header_util.on .btn_sitemap .btn_line.first {
+    transform: rotate(45deg) translate(0, 0);
+    transform-origin: left top;
+}
+.header_util.on .btn_sitemap .btn_line.middle {opacity: 0; }
+.header_util.on .btn_sitemap .btn_line.last {
+    transform: rotate(-45deg) translate(-3px, 3px);
+    transform-origin: left bottom;
+}
+.btn_blind .header_lang a{
+    color: #fff;
+}
+.btn_blind .header_lang a:last-child{
+    color: #79e696;
+}
+.btn_blind .header_lang a:first-child:hover{
+    color:#fff;
+}
+.btn_blind .header_lang a:first-child{
+   display: inline-block;
+   border-right:1px solid rgba(255,255,255,0.5);
+   padding-right: 10px;
+}
+.btn_blind .header_util .sitemap_box {
+    float: right;
+    vertical-align: middle; 
+    /* border:1px solid red; */
+    padding-top:2px;  
+}
+.btn_blind .header_util .sitemap_box a{
+    display: block;
+    width: 24px;
+    height: 24px;
+    border:1px solid red; 
+    background:url("../img/sprite.png") no-repeat;
+    background-size: 474px 1250px;
+    background-position: -147px -25px;
+    padding-right: 10px;
+}

@@ -1,0 +1,189 @@
+#wrap{
+    padding-bottom:160px;
+}
+.gnb_menu_list >.gnb_menu_item > span{
+    border-bottom: 2px solid #00c37c;
+    padding-bottom: 10px;
+}
+
+#content{
+    max-width:100%;
+    margin:0 auto;
+    /* border:1px solid red; */
+}
+.section_wrap{
+    padding:81px 0 160px;
+    /* border:1px solid red; */
+}
+h2{
+    text-align: center;
+}
+.section_wrap_section{
+    width:1120px;
+    margin:0 auto;
+}
+.section_wrap_ul{
+    padding:0 0 36px 30px;
+    max-width:1600px;
+    margin:0 auto;
+}
+.section_wrap_ul li{
+ float: left;
+ margin-top:-2px;
+ color:#878890;
+ font-size: 12px;
+ -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+ font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+ position: relative;
+}
+.section_wrap_ul li::after{
+    content: '';
+    position: absolute;
+    clear: both;
+    width:7px;
+    height:7px;
+    top:5px;
+    left:20px;
+    background:url(../img/sprite.png) no-repeat;
+    background-size: 474px 1250px;
+    -webkit-background-size:474px 1250px;
+    background-position:-101px 0;
+}
+.section_wrap_ul li:nth-child(2)::after{
+    left:41px;
+}
+.section_wrap_ul li:last-child::after{
+    background: none;
+}
+.section_wrap_ul li a {
+    color:#878890;
+    padding-right: 25px;
+    /* border:1px solid blue; */
+}
+/* hover시 */
+.section_wrap_ul li a:hover{
+    color:#878890;
+    text-decoration: underline;
+}
+.section_wrap_ul_li_span{
+    float: left;
+    margin-top:none;
+    color:#212121;
+   }
+.section_wrap_title{
+    /* border:1px solid royalblue; */
+    color:#212121;
+    font-size:42px;  
+    -webkit-font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    padding-bottom: 70px;
+}
+.section_wrap_section >.section_wrap_section_article1,.section_wrap_section_article2{
+    width:100%;
+    padding-bottom:75px;
+}
+
+.section_wrap_section_article_box{
+    /* border:1px solid rebeccapurple; */
+    float: left;
+    overflow: hidden;
+}
+.section_wrap_section_article_box li{
+    float: left;
+    /* border:1px solid red; */
+}
+.article_dd_title_box{
+    font-size: 15px;
+    color:#333;
+    -webkit-font-family: "NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+}
+.article_dd_text_box{
+    margin:3px 0 21px;
+    color:#606167;
+    font-size:15px;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+}
+.article_dd_text_box:first-child{
+    line-height: 1.8;
+}
+.section_wrap_section>article::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+article>h3{
+    /* border:1px solid blue; */
+    float: left;
+    width:23.5%;
+}
+.article3_ul{
+    width:76.5%;
+}
+.article3_ul li{
+    width:33.3%;
+}
+.article3_ul li a{
+   color: #606167;
+}
+.article_dd_title_box > span{
+    position: relative;
+    /* border:1px solid tomato; */
+    padding-right:30px;
+}
+.article_dd_title_box > span:hover{
+    text-decoration: underline;
+}
+.article_dd_title_box > span::after{
+    content: '';
+    display: block;
+    position: absolute;
+    width:18px;
+    height:18px;
+    top:-1px;
+    right:0;
+    background: url(../img/sprite.png) no-repeat;
+    /* border:1px solid black; */
+    background-size: 474px 1250px;
+    -webkit-background-size:474px 1250px;
+    background-position:-58px 0;
+ }
+
+ /* hover 만들기*/
+.article_dd_title_box span{
+    position: relative;
+}
+.article_dd_title_box span::before{
+    display: none;
+    content:'';
+    position: absolute;
+    right:0;
+    top:-1px;
+    width:18px;
+    height: 18px;
+    /* border:1px solid tomato; */
+    background: url(../img/sprite.png) no-repeat;
+    background-size:474px 1250px;
+    -webkit-background-size: 474px 1250px;
+    background-position: -104px -68px;  
+}
+ li > a:hover span::after,
+ li > a:focus span::after
+{
+    display: none;
+    
+}
+li > a:hover span::before,
+li > a:focus span::before
+{
+   display: block;
+}
+.section_wrap_article3{
+    margin-top:80px;
+}
+
+.article_dd_text_box_dd{
+    margin-top:3px;
+}

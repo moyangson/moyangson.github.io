@@ -3,49 +3,17 @@
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/reset.css">
         <link rel="stylesheet" href="css/common.css">
-        <!-- <link rel="stylesheet" href="css/main_header.css"> -->
+        <link rel="stylesheet" href="css/main_header.css">
         <link rel="stylesheet" href="css/main_slide.css">
         <link rel="stylesheet" href="css/main_content.css">
         <link rel="stylesheet" href="css/footer.css">
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
         <style>
-            /* li[class^=gnb_menu_list]{}  */
-.gnb_dropmenu_wrap{
-    display: none;
-    min-width:1100px ;
-    height: 276px;
-    background-color:rgb(30,197,69);
-    z-index: 999;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top:80px;
-    text-align: center;
-    font-size: 0;/*ul*/
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);/* 입체감을 주기위해 쉐도우주고 투명도를 준다.*/
-
-    
-} 
-/*로고 영역*/
-h1.header_logo{
-    /* border:1px solid blue; */
-    width:87px;
-    height: 17px;
-    margin:32px 0 0 32px;
-    background:url("img/header_logo.png") no-repeat;
-    background-size: cover;
-    float: left;
-    
-}
-.header_logo a{
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-header {position:fixed;  text-align: center;}
-header.hide {
-    position: fixed;
-    top:-80px; left:0; right:0; transition: top 0.5s ease;}
         </style>
     </head>
     <body>
@@ -57,9 +25,8 @@ header.hide {
                     <h2 class="blind">네이버 메인 메뉴</h2>
                     <nav>
                         <ul class="gnb_menu">
-                            <li class="gnb_menu_list1">
-                                <a href="#" class="gnb_menu_item">네이버</a>
-                                <ul class="gnb_dropmenu_wrap1">
+                            <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">네이버</a>
+                                <ul class="gnb_dropmenu_wrap">
                                     <li>
                                         <ul class="gnb_dropmenu">
                                             <li class="depth_blank"><a href="" class="gnb_dropmenu_item"><strong>NAVER</strong></a></li>
@@ -91,7 +58,7 @@ header.hide {
                             <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">서비스</a>
                                 <ul class="gnb_dropmenu_wrap">
                                     <li>
-                                        <ul class="gnb_dropmenu">
+                                        <ul class="gnb_dropmenu">         
                                             <li class="depth_blank"><a href="" class="gnb_dropmenu_item"><strong>Featured<br>Services</strong></a></li>
                                         </ul>
                                     </li>
@@ -107,12 +74,12 @@ header.hide {
                                     </li>
                                     <li>
                                         <ul class="gnb_dropmenu">
-                                            <li class="depth_blank"><a href="" class="gnb_dropmenu_item"><strong>All<br>serviec</strong></a></li>
+                                            <li class="depth_blank"><a href="" class="gnb_dropmenu_item item_bg"><strong>All<br>serviec</strong></a></li>
                                         </ul>
                                     </li>
                                 </ul>
                             </li>
-                            <li class="gnb_menu_list2"><a href="#" class="gnb_menu_item">가치실현</a>
+                            <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">가치실현</a>
                                 <ul class="gnb_dropmenu_wrap">
                                     <li>
                                         <ul class="gnb_dropmenu">
@@ -138,10 +105,10 @@ header.hide {
                                     <!-- 두개 포함 -->
                                     <li>
                                         <ul class="gnb_dropmenu classify1"><!--ul을 빼줄수도 있음 -->
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>동반성장</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>동반성장</strong></a></li>
                                         </ul><!-- class이름 2개줌, 띄어쓰기로 classify:분류하다 -->
                                         <ul class="gnb_dropmenu">
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>환경</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>환경</strong></a></li>
                                             <li><a href="" class="gnb_dropmenu_item"><span class="depth">데이터센터 각</span></a></li>
                                             <li><a href="" class="gnb_dropmenu_item"><span class="depth">네이버 사옥</span></a></li>
                                         </ul>
@@ -159,8 +126,7 @@ header.hide {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="gnb_menu_list3">
-                                <a href="#" class="gnb_menu_item">홍보</a>
+                            <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">홍보</a>
                                 <ul class="gnb_dropmenu_wrap">
                                     <li>
                                         <ul class="gnb_dropmenu">
@@ -184,7 +150,7 @@ header.hide {
                                     </li>
                                 </ul>
                             </li>
-                            <li class="gnb_menu_list4"><a href="#" class="gnb_menu_item">투자정보</a>
+                            <li class="gnb_menu_list"><a href="#" class="gnb_menu_item">투자정보</a>
                                 <ul class="gnb_dropmenu_wrap">
                                     <li>
                                         <ul class="gnb_dropmenu">
@@ -196,13 +162,13 @@ header.hide {
                                     </li>                                    
                                     <li>
                                         <ul class="gnb_dropmenu classify1">
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>공시정보</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>공시정보</strong></a></li>
                                         </ul>
                                         <ul class="gnb_dropmenu">
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>주가정보</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>주가정보</strong></a></li>
                                         </ul>
                                         <ul class="gnb_dropmenu">
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>재무재표</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>재무재표</strong></a></li>
                                         </ul>
                                     </li>
                                     <li>
@@ -225,10 +191,10 @@ header.hide {
                                     </li>
                                     <li>
                                         <ul class="gnb_dropmenu classify1">
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>결산공고</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>결산공고</strong></a></li>
                                         </ul>
                                         <ul class="gnb_dropmenu">
-                                            <li class="depth_blank classify"><a href="" class="gnb_dropmenu_item"><strong>공고</strong></a></li>
+                                            <li class=""><a href="" class="gnb_dropmenu_item"><strong>공고</strong></a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -242,67 +208,270 @@ header.hide {
                             <a href="#">KOR</a>
                             <a href="#">ENG</a>
                         </div><!--header_lang-->
-                        <div class="sitemap_box">
+
+                        <a href="" class="btn_sitemap">
+                            <span class="blind">사이트맵 열기/닫기</span>
+                            <span class="btn_line first"></span>
+                            <span class="btn_line middle"></span>
+                            <span class="btn_line last"></span>
+                        </a>
+
+                        <div class="btn_blind">
+                            <div class="header_wrap">
+                                <h1 class="header_logo"><a href="index.html"><span class="blind">NAVER</span></a></h1>
+                                <h2 class="blind">네이버 메인 메뉴</h2>
+                                <nav>
+                                    <ul class="">
+                                        <li class="btn_gnb_menu"><a href="#" class="">네이버</a>
+                                            <ul class="">
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class=""><strong>NAVER</strong></a></li>
+                                                        <li><a href="1.introduction.html" class="blind_gnb_menu_item"><span class="depth">네이버
+                                                                    소개</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">주요연혁</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">수상내역</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>주요관계사</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class=""><strong>제휴제안</strong></a></li>
+                                                        <li><a href="" class=""><span class="blind_gnb_menu_item depth">제후제안 안내</span></a></li>
+                                                        <li><a href="" class=""><span class="blind_gnb_menu_item depth">제우제안 등록</span></a></li>
+                                                        <li><a href="" class=""><span class="blind_gnb_menu_item depth">검토현황 조회</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class="depth_blank"><a href="4.map.html" class=""><strong>Contact</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="btn_gnb_menu"><a href="#" class="">서비스</a>
+                                            <ul class="">
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="btn_gnb_menu_list_strong blind_gnb_menu_item"><strong>FEATURED SERVICES</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="btn_gnb_menu_list_strong" class="blind_gnb_menu_item"><strong>FOR BUSINESS</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="btn_gnb_menu_list_strong" class="blind_gnb_menu_item"><strong>FOR CREATORS</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="btn_gnb_menu_list_strong" class="blind_gnb_menu_item"><strong>FOR DEVELOPERS</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="btn_gnb_menu_list_strong" class="blind_gnb_menu_item item_bg"><strong>ALL SERVICE</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="btn_gnb_menu"><a href="#" class="">가치실현</a>
+                                            <ul class="">
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="3_1_flower.html" class="blind_gnb_menu_item"><strong>프로젝트
+                                                                    꽃</strong></a></li>
+                                                    </ul>
+                                                </li>
                             
-                    <button type="button" class="btn_sitemap" aria-expanded="false">
-                        <span class="blind">사이트맵 열기/닫기</span>
-                        <span class="btn_line"></span>
-                        <span class="btn_line"></span>
-                        <span class="btn_line"></span>
-                    </button>
-                
-                        </div><!--sitemap_box-->
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>기업윤리</strong></a></li>
+                                                        <li><a href="" class=""><span class="depth blind_gnb_menu_item">기업윤리 규범</span></a></li>
+                                                        <li><a href="" class=""><span class="depth blind_gnb_menu_item">시업윤리 상담센터</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>프라이버시 센터</strong></a>
+                                                        </li>
+                                                        <li><a href="" class=""><span class="depth blind_gnb_menu_item">네이버 리포트</span></a></li>
+                                                        <li><a href="" class=""><span class="depth blind_gnb_menu_item">개인정보 보호</span></a></li>
+                                                        <li><a href="" class=""><span class="depth blind_gnb_menu_item">정보보호 인증 </span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- 두개 포함 -->
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <!--ul을 빼줄수도 있음 -->
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>동반성장</strong></a></li>
+                                                    </ul><!-- class이름 2개줌, 띄어쓰기로 classify:분류하다 -->
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>환경</strong></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">데이터센터 각</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">네이버 사옥</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <!-- 두개 포함 끝 -->
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class=""><strong>With Naver</strong></a>
+                                                        </li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">재단법인 해피빈</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">네이버 문학재단</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">커넥트 재단</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">접근성</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">네이버 라이브러리</span></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="btn_gnb_menu"><a href="#" class="blind_gnb_menu_item">홍보</a>
+                                            <ul class="">
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>보도자료</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>TV광고</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>미디어 행사</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>커뮤니케이션 채널</strong></a>
+                                                        </li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="btn_gnb_menu"><a href="#" class="blind_gnb_menu_item">투자정보</a>
+                                            <ul class="">
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>기업지배구조</strong></a>
+                                                        </li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">주주구성 </span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">이사회</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">정관</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>공시정보</strong></a></li>
+                                                    </ul>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>주가정보</strong></a></li>
+                                                    </ul>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>재무재표</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>IR일정</strong></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">IR 행사</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">IR Meeting</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">주주총회 </span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>IR자료실</strong></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">실적발표</span></a></li>
+                                                        <li><a href="" class=""><span class="depth">감사보고서</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">사업보고서</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">연차보고서</span></a></li>
+                                                        <li><a href="" class="blind_gnb_menu_item"><span class="depth">FAQ</span></a></li>
+                                                    </ul>
+                                                </li>
+                                                <li>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="blind_gnb_menu_item"><strong>결산공고</strong></a></li>
+                                                    </ul>
+                                                    <ul class="btn_gnb_menu_list">
+                                                        <li class=""><a href="" class="v"><strong>공고</strong></a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="btn_gnb_menu"><a href="#" class="blind_gnb_menu_item">채용
+                                                <ul class="btn_gnb_menu_list">
+                                                    <li class=""><a href="" class="blind_gnb_menu_item item_bg"><strong>채용정보</strong></a></li>
+                                                </ul>
+                                            </a></li>
+                                    </ul>
+                                </nav>
+                            
+                            </div>
+                        </div>
                     </div><!--header_util-->
                 </div><!-- header_wrap -->
             </header>
             <!-- header end -->
             <div id="container">
                 <section class="main_slide">
-                    <div class="slide_info_container"><!--슬라이드 정보가 들어가 있는-->
-                        <a href="#" target="_blank" class="slide_info_box" style="display: none;">
+                    <div class="slide">
+                        <div class="slide_item">
+                            <img src="img/main_slide1.jpg" alt="슬라이드 이미지">
                             <h2 class="slide_logo smartlens"><span class="blind">Smart Lens 로고</span></h2>
                             <div class="slide_text_box">
                                 <p class="slide_title"><strong>삶의 가치를 높이는<br>기술을 연구합니다. </strong></p>
                                 <p class="slide_text"><span>당신이 더 가치 있는 일에 몰입할 수 있도록<br>삶을 더 깊이 이해하는 기술을 만들어 갑니다. </span></p>
                             </div>
-                        </a><!--첫번째 끝-->
-                        <a href="#" target="_blank" class="slide_info_box" style="display: none;">
+                            <div class="slide_progressbar">
+                                <span class="fill" style="width: 25%;"></span>
+                            </div>
+                        </div>
+                        <div class="slide_item">
+                            <img src="img/main_slide2.jpg" alt="슬라이드 이미지">
                             <h2 class="slide_logo flower"><span class="blind">프로젝트 꽃 로고</span></h2>
                             <div class="slide_text_box">
                                 <p class="slide_title"><strong>무한한 가능성과의<br> 만남을 기대합니다. </strong></p>
                                 <p class="slide_text"><span>다양한 스몰비즈니스와 크리에이터의 가치가 발견되고<br>그 이름을 꽃 피울 수 있도록 함께합니다.</span></p>
                             </div>
-                        </a><!--두번째 끝-->
-                        <a href="#" target="_blank" class="slide_info_box" style="display: none;">
+                            <div class="slide_progressbar">
+                                <span class="fill" style="width: 50%;"></span>
+                            </div>
+                        </div>
+                        <div class="slide_item"><img src="img/main_slide3.jpg" alt="슬라이드 이미지">
                             <h2 class="slide_logo spacegreen"><span class="blind"> SPACE GREEN 로고</span></h2>
                             <div class="slide_text_box">
                                 <p class="slide_title"><strong>더 넓은 세상에서<br>더 큰 미래를 생각합니다. </strong></p>
                                 <p class="slide_text"><span>전 세계 이용자들을 만나 새로운 경험과 가치를 전하고,<br>글로벌과 호흡하는 기술을 통해, 한 단계 진화한 연결을 만들어갑니다.</span></p>
                             </div>
-                        </a><!--세번째 끝-->
-                        <a href="#" target="_blank" class="slide_info_box" style="display: block;">
+                            <div class="slide_progressbar">
+                                <span class="fill" style="width: 75%;"></span>
+                            </div>
+                        </div>
+                        <div class="slide_item"><img src="img/main_slide4.jpg" alt="슬라이드 이미지">
                             <h2 class="slide_logo labs"><span class="blind">LABS 로고</span></h2>
                             <div class="slide_text_box">
                                 <p class="slide_title"><strong>생활환경지능 기술로<br>새로운 연결과 발견의 가능성을 만듭니다</strong></p>
                                 <p class="slide_text"><span>네이버랩스는 사용자의 환경과 상황을 인지하고 이해하여<br>필요한 정보와 서비스를 알아서 자연스럽게 연결하는 기술을 연구합니다.</span></p>
                             </div>
-                        </a><!--네번째 끝-->
-                        <div class="slide_progressbar">
-							<span class="fill" style="width: 25%;"></span>
-						</div>
-
-						<div class="slide_paging">
-							<span class="current"><span class="blind">현재 슬라이드 페이지</span>1</span>
-                            <span class="total"><span class="blind">전체 슬라이드 페이지</span>4</span>                            
-                        </div>                       
-						<button type="button" class="btn_prev"><span class="blind">이전</span></button>
-						<button type="button" class="btn_next"><span class="blind">다음</span></button>
-                    </div><!--slide_info_container-->
-                    <div class="slide">
-                        <div class="slide_item"><img src="img/main_slide1.jpg" alt="슬라이드 이미지"></div>
-                        <div class="slide_item"><img src="img/main_slide2.jpg" alt="슬라이드 이미지"></div>
-                        <div class="slide_item"><img src="img/main_slide3.jpg" alt="슬라이드 이미지"></div>
-                        <div class="slide_item"><img src="img/main_slide4.jpg" alt="슬라이드 이미지"></div>
+                            <div class="slide_progressbar">
+                                <span class="fill" style="width: 100%;"></span>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <section class="main_content">
@@ -493,22 +662,50 @@ header.hide {
                 </div>
             </footer> 
         </div>
-        <script>    
-            window.addEventListener('scroll', scrollWork);
-            
-            const htmlElem = document.querySelector('html');
-            const headerElem = document.querySelector('header');
-            var old = 0;
-            function scrollWork() {
-            console.log(htmlElem.scrollTop);
-                if (old < htmlElem.scrollTop && htmlElem.scrollTop > 300) {
-                    headerElem.classList.add('hide');
-                } else {
-                    headerElem.classList.remove('hide');
-                }
-                old = htmlElem.scrollTop;
-            }
-         </script>
     </body>
+    <script>
+        window.addEventListener('scroll', scrollWork);
 
+        const htmlElem = document.querySelector('html');
+        const headerElem = document.querySelector('.header_wrap');
+        //버튼
+        const btnElem = document.querySelector('.btn_sitemap');
+        const headerUtil = document.querySelector('.header_util');
+        btnElem.addEventListener('click', work);
+       
+        //버튼
+        function work(e) {
+            e.preventDefault();
+            if(!headerUtil.classList.contains('on')){
+                 headerUtil.classList.add('on');
+                //  htmlElem.style.overflow = 'hidden'
+            }
+            else{
+                headerUtil.classList.remove('on');
+            }
+            
+            console.log(work);
+        }
+
+        var old = 0;
+        function scrollWork() {
+            console.log(htmlElem.scrollTop);
+            if (old < htmlElem.scrollTop && htmlElem.scrollTop > 300) {
+                headerElem.classList.add('hide');
+            } else {
+                headerElem.classList.remove('hide');
+            }
+            old = htmlElem.scrollTop;
+        }
+        //슬라이드
+        var obt = {
+                auto: true,
+                pager: true,
+                pagerType : 'short',
+                pagerShortSeparator : '/',
+                mode: 'fade', captions: true
+        }
+        $(".slide").bxSlider(obt);
+    
+    </script>
 </html>

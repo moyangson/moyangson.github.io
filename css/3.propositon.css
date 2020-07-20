@@ -1,0 +1,209 @@
+#wrap{
+    padding:81px 0 160px;
+}
+#content{
+    width:100%;
+    margin:0 auto;
+    border:1px solid red;
+    letter-spacing: -0.2px;
+}
+.section_wrap{
+    max-width:1600px;
+    border:1px solid red;
+    margin:0 auto;
+}
+.content_top_menu{
+    padding:0 0 36px 30px;
+    max-width:1600px;
+    /* border:1px solid blue; */
+    margin:0 auto;
+}
+.content_top_menu li{
+    display: inline-block;
+    margin-top:-2px;
+    color:#878890;
+    font-size: 12px;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    position: relative;
+}
+.content_top_menu li span{
+    color:#333;
+}
+.content_top_menu li a{
+    color:#878890;
+    padding:0 5px;
+    margin-top:-2px;
+}
+.content_top_menu li::after{
+    content: ' \003E';
+    font-size: 11px;
+}
+.content_top_menu li:last-child::after{
+    content: '';
+}
+.section_wrap_section{
+    width:1120px;
+    margin:0 auto;
+}
+.section_wrap_ul{
+    padding:0 0 36px 30px;
+    max-width:1600px;
+    margin:0 auto;
+}
+.section_wrap_ul li{
+ float: left;
+ margin-top:-2px;
+ color:#878890;
+ font-size: 12px;
+ -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+ font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+ position: relative;
+}
+.section_wrap_ul li::after{
+    content: '';
+    position: absolute;
+    clear: both;
+    width:7px;
+    height:7px;
+    top:5px;
+    left:20px;
+    background:url(../img/sprite.png) no-repeat;
+    background-size: 474px 1250px;
+    -webkit-background-size:474px 1250px;
+    background-position:-101px 0;
+}
+.section_wrap_ul li:nth-child(2)::after{
+    left:41px;
+}
+.section_wrap_ul li:last-child::after{
+    background: none;
+}
+.section_wrap_ul li a {
+    color:#878890;
+    padding-right: 25px;
+    /* border:1px solid blue; */
+}
+/* hover시 */
+.section_wrap_ul li a:hover{
+    color:#878890;
+    text-decoration: underline;
+}
+.section_wrap_ul_li_span{
+    float: left;
+    margin-top:none;
+    color:#212121;
+   }
+.content_title{
+    text-align: center;
+}
+.content_title h2{
+    width:100%;
+    color:#212121;
+    font-size: 42px;
+    font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    padding-bottom: 30px;
+    letter-spacing: -2.5px;
+}
+.content_title P{
+    width:100%;
+    color:#333;
+    font-size: 20px;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    padding-bottom: 25px;
+    
+}
+.section_content_warp{
+    width:100%;
+    background-color: rgb(245, 247, 248);
+}
+.section_content_bg{
+    max-width:1120px;
+    margin:0 auto;
+}
+.section_content_bg h3{
+    width:100%;
+    color:#333;
+    padding:27px 0;
+    font-size: 20px;
+    -webkit-font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+}
+.section_content_bg::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.section_content_bg >ul >li{
+    width:216px;
+    height: 142px;
+    padding-top:100px;
+    font-size: 15px;
+    font-family: "NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    float: left;
+    border:1px solid red;
+}
+.section_content_bg ul >li> a{
+  text-align: center;
+  display: block;
+}
+.section_content_bg_drop{
+    display: none;
+}
+.procedure{
+    max-width: 1120px;
+    margin:74px 114.5px 120px;
+}
+.procedure_section1{
+    padding-bottom: 27px;
+    border: 1px solid royalblue;
+}
+
+.procedure_section2{
+    margin-top:48px;
+    border:1px solid rebeccapurple;
+}
+.procedure_section1_ol{
+    margin:0 auto;
+    border:1px solid tomato;
+}
+.procedure_section1_ol::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+.procedure_section1_ol li{
+    width:182px;
+    height: 182px;
+    border-radius:100px;
+    float: left;
+    margin:0 20px;
+    border:1px solid #333;
+    text-align: center;
+    position: relative;
+    opacity: 0.8;
+    float: left;
+}
+.procedure_section1_ol p{
+    position: absolute;
+    padding-top:45px ;
+    left:50%;  
+    -webkit-transform: translateX(-50%);   
+    transform: translateX(-50%);   
+    border:1px solid red;
+    font-size: 20px;
+    color:#212121;
+    font-family: "NanumSquare-B", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+}
+.procedure_section1_ol span{
+    display: block;
+    font-size: 12px;
+    margin-bottom: 12px;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+}
+
