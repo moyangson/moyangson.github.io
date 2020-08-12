@@ -1,0 +1,130 @@
+main {
+    width:100%;
+    padding:0 35px;
+    font-family: 'Noto Sans KR', sans-serif;
+     /* border:1px solid red; */
+}
+.main_wrap > section > a {
+    color:black;
+}
+.main_wrap > section > a > img{
+    margin-top:100px;
+    display: block;
+    width:99.95625%;
+}
+.main_wrap > section > div{
+   
+    text-align: center;
+ 
+    margin:0 auto;
+}
+.main_wrap > section > div > h2,
+.main_wrap > section > div > h2 > a{
+    font-size: 43px;
+    color:black ;
+    margin:43px 0 13px 0;
+}
+.main_wrap > section > div > p,
+.main_wrap > section > div > p > a
+{   font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color:black;
+    
+}
+.main_wrap > section > div > a, .article_radius{
+    display: inline-block;
+    padding:10px 30px;
+    background-color: black;
+    color: #fff;
+    border:1px solid black;
+    border-radius: 60px;
+}
+.main_wrap >.trending_now{
+    width:100%;
+    height: 700px;
+    padding-bottom: 88px;
+}
+.main_wrap >.trending_now::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main_wrap >.trending_now > h3,
+.main_wrap >.featured_Shoes > h3,
+.main_wrap >.apparel_essentials > h3
+{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 23px;
+    padding: 0  0 16px 10px;
+   
+}
+.main_wrap >.trending_now > article{
+    float: left;
+    margin: 7px;
+    width:calc(48.8% - 7px);
+    overflow: hidden;
+}
+
+.main_wrap >.trending_now > article picture {
+    border: 1px solid green;
+    width: 100%;
+    height: 100%;
+}
+
+.main_wrap >.trending_now > article > figcaption > picture > img{
+    transform-origin: center;
+    transform: translateX(-15%);
+    border:1px solid green;
+}
+
+.main_wrap >.trending_now > article > h4 {
+ position: absolute;
+ left:48px;
+ font-size:20px;
+ bottom:110px;
+ z-index: 100;
+ 
+}
+.main_wrap >.trending_now > article > h4  a{
+    color:black;
+}
+.main_wrap >.trending_now > article > .article_radius{
+    position: absolute;
+    font-size:15px;
+    left:48px;
+    bottom: 50px;
+}
+.main_wrap > .apparel_essentials{
+    padding-top:88px;
+    width: 100%;
+}
+.main_wrap > .apparel_essentials::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.main_wrap > .apparel_essentials > ul > li{
+    float: left;
+    width:32.1%;
+    margin-right:15px;
+    position: relative;
+     /* border:1px solid red; */
+}
+.main_wrap > .apparel_essentials > ul > li:last-child{
+    margin-right: none;
+}
+.main_wrap > .apparel_essentials > ul > li > a >img{
+    width:100%;
+}
+.main_wrap > .apparel_essentials > ul > li > a{
+    color:#fff;
+    position: relative;
+}
+.main_wrap > .apparel_essentials > ul > li > a> h5{
+    position: absolute;
+    top:50px;
+    left:50px;
+    font-size:20px;
+}

@@ -1,0 +1,78 @@
+/* 슬라이드 */
+
+main .bx-wrapper{
+    box-shadow: none;
+    border: none;
+    background:none;
+    z-index: 0;
+    position: relative;
+    max-width: 97.5% !important;
+    /* border:1px solid blue; */
+}
+/* 화살표 버튼 */
+main .bx-wrapper .bx-controls-direction a {
+    width:50px;
+    height:50px;
+}
+main .bx-wrapper .bx-next{
+    background: url(../img/btn_next.png) no-repeat 0 0;
+    right:50px;
+    opacity: 0;
+}
+main .bx-wrapper .bx-prev{
+    background: url(../img/btn_prev.png) no-repeat 0 0;
+    left:50px;
+    opacity: 0;
+}
+main .bx-wrapper .bx-prev:hover,
+main .bx-wrapper .bx-next:hover, 
+main .bx-wrapper .bx-prev:focus,
+main .bx-wrapper .bx-next:focus{
+    background-position: 0 0;
+    opacity: 1;
+}
+/* 버튼 */
+
+main .featured_Shoes .bx-wrapper .bx-pager {
+    padding:0;
+    margin:0 10px;
+}
+main .featured_Shoes .bx-pager.bx-default-pager a{
+    width:300px;
+    height:5px;
+    margin:0;
+    /* border:1px solid red; */
+    background-color:#f7f7f7;
+}
+
+main .bx-wrapper .bx-pager.bx-default-pager a:hover,
+main .bx-wrapper .bx-pager.bx-default-pager a.active, 
+main .bx-wrapper .bx-pager.bx-default-pager a:focus{
+    background-color:#cccccc;
+ }
+/* 글씨 */
+.wrap main .featured_Shoes .bx-wrapper .bx-viewport .e_slider > li{
+    text-align: left;    
+    font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1.8rem;
+}
+.wrap main .featured_Shoes .bx-wrapper .bx-viewport .e_slider > li > a > h5{
+    font-weight: 600;
+    margin-top:15px;
+    color: #000;
+    font-size: 17px;
+}
+.wrap main .featured_Shoes .bx-wrapper .bx-viewport .e_slider > li > a > p{
+    color:#8d8d8d;
+    font-weight:bolder;
+    font-size: 15px;
+    
+} 
+/* 슬라이드 이미지 */
+main .bx-wrapper img:hover{
+    opacity: 0.8;
+}
+main .e_slider > li{
+    margin-right: 15px !important;
+    width: 100%;
+}

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width", initial-scale=1.0>
+        <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+        <style>
+li {list-style: none}
+.btn {display: none;}
+.menu a {
+    text-decoration-line: none;  
+    color:#000;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'NanumSquareOTFRegular';
+}
+.menu .font_bebas{
+    font-family: 'Bebas Neue',Arial,sans-serif;
+    font-weight: 400;
+}
+.menu > ul {
+    border:1px solid red;
+    max-width: 400px; 
+	margin:0 auto; 
+    letter-spacing: 1px;;
+    padding:0;
+}
+.menu > ul:after {
+	content:""; 
+	width:100%; 
+	display: inline-block; 
+}
+
+.menu > ul > li {
+	display:block; 
+    float: left;
+    padding-right: 43px;
+	font-size:16px; 
+	line-height: 1; 
+    border:1px solid red;
+}
+
+/* 메뉴 제목 */
+.menu > ul > li > a {
+    background-color: rebeccapurple;
+    padding:25px 0;
+    font-size: 17px;
+	color:black; 
+    display: block;
+   
+}
+.menu > ul > li > ul {
+	display: none; 
+	position:absolute; 
+	left:0; 
+	right:0; 
+	background-color:#ededed; 
+	padding:50px; 
+	top:110px; 
+    text-align:left ;
+    
+    
+}
+.menu > ul > li.active > ul {
+    display: block;
+    border:1px solid royalblue;
+    margin:0 auto;
+    padding-left: 200px;
+    
+}
+.menu > ul > li > ul > li {
+    border:1px solid lime;
+    display: inline-block; 
+    text-align: left; 
+    margin-right: 60px;
+    vertical-align: top; 
+}
+
+.menu > ul > li > ul > li > a {
+    font-family: 'NanumSquare-EB';
+    border:1px solid blue; 
+}
+.gnb_dropmenu_wrap{
+    position: relative;
+    left:150px;
+}
+.menu > ul > li > ul > li > ul > li, .menu .gnb_dropmenu_wrap_supplies > ul > li {
+    margin:12px 0;
+}
+.menu > ul > li > ul > li > ul{
+    padding:0;
+    position: relative;
+}
+.menu > ul > li > ul > li > ul > li> a, .menu .gnb_dropmenu_wrap_supplies > ul > li > a{
+    font-size: 13px;
+    border:1px solid red;
+}
+.menu .gnb_dropmenu_wrap_supplies > ul{
+    padding:0;
+}
+.menu > ul > li > ul > li:nth-child(2){
+    border-left: 1px solid gray;
+}
+.menu > ul > li > ul > li:nth-child(3){
+    border-right: 1px solid gray;
+}
+.menu  li  a  strong{
+    font-family: 'NanumSquare-EB';
+    font-weight:bolder;
+    border:1px solid lime;
+    font-size: 16px;
+}
+.gnb_dropmenu .font_bebas{
+    font-size: 16px; 
+}
+.gnb_dropmenu_wrap > li > a {
+    font-family: 'NanumSquare-EB';
+}
+.menu .gnb_dropmenu_wrap_supplies{
+    border:1px solid blueviolet;
+}
+
+        </style>
+    </head>
+    <body>
+        <div class="header_nav active">
+            <h1><a href="" class="logo"><span class="blind">나이키</span></a></h1>
+            <a href="" class="btn">전체메뉴</a>
+            <nav class="menu">
+                <ul class="gnb_menu">
+                    <li class="gnb_menu_list"><a href="" class="font_bebas">NEW RELEASES</a>
+                        <ul class="gnb_dropmenu_wrap">
+                            <li><a href=""><strong>신상품 전체보기</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">SNKRS</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>썸머 에센셜</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>티셔츠 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>샌들 &amp; 슬리퍼</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>월드와이드 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">NikeLab</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">LAST CHANCE</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="font_bebas">NEW FOR MEN</a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">신발</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">의류</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">용품</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="font_bebas">NEW FOR WOMEN</a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">신발</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">의류</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">용품</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">전체보기</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="" class="font_bebas">NEW FOR KIDS</a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">신발</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">의류</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">용품</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">전체보기</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_menu_list"><a href="" class="font_bebas">MEN</a>
+                        <ul class="gnb_dropmenu_wrap">
+                            <li><a href=""><strong>신상품</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">SNKRS</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">THE BEST</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">MEMBER SHOP</a>
+                                    </li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>썸머 에센셜</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>홈트레이닝 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>러닝 플라이니트 컬렉션</strong></a>
+                                    </li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>젠더리스 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"> <span class="font_bebas">1 ON 1</span><strong>상품 설명 서비스</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">SALE</a></li>
+                                </ul>
+                            </li> 
+                            <li><a href=""><strong>신발</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">신발 전체</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">라이프스타일</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">러닝</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">트레이닝 &amp; 짐</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">농구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">조던</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">축구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">스케이트보딩</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">골프</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">테니스</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">샌들 &amp; 슬리퍼</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>의류</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">의류 전체</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">탑 &amp; 티셔츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">숏 팬츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">팬츠 &amp; 타이츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">후디 &amp; 크루</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">재킷 &amp; 베스트</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">나이키 프로</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">양말</a></li>
+                                    <li class="gnb_dropmenu_wrap_supplies"><a href=""><strong>용품</strong></a>
+                                        <ul class="gnb_dropmenu">
+                                            <li><a href="" class="gnb_dropmenu_item">모자 &amp; 헤드밴드</a></li>
+                                            <li><a href="" class="gnb_dropmenu_item">가방</a></li>
+                                            <li><a href="" class="gnb_dropmenu_item">애플워치</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>스포츠</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">러닝</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">트레이닝 &amp; 짐</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">농구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">축구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">스케이트보딩</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">골프</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">테니스</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>브랜드</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">Nike Sportswear</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">NikeLab</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">Jordan</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">NBA</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">FAN GEAR</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">ACG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_menu_list"><a href="" class="font_bebas">WOMEN</a>
+                        <ul class="gnb_dropmenu_wrap">
+                            <li><a href=""><strong>신상품</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">SNKRS</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">THE BEST</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">MEMBER SHOP</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>나에게 맞는 브라 찾기</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>썸머 에센셜</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>홈트레이닝 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>닝 플라이니트 컬렉션러</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>나이키 에어맥스 베로나</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>ON 1 상품 설명서비스</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">SALE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>신발</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">신발 전체</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">라이프스타일</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">러닝</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">트레이닝 &amp; 짐</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">조던</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">축구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">골프</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">테니스</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">샌들 &amp; 슬리퍼</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>의류</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">의류 전체</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">탑 &amp; 티셔츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">스커트 &amp; 드레스</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">스포츠 브라</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">팬츠 &amp; 타이츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">숏 팬츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">후디 &amp; 크루</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">재킷 &amp; 베스트</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">양말</a></li>
+                                    <li class="gnb_dropmenu_wrap_supplies"><a href=""><strong>용품</strong></a>
+                                        <ul class="gnb_dropmenu">
+                                            <li><a href="" class="gnb_dropmenu_item">모자 &amp; 헤드밴드</a></li>
+                                            <li><a href="" class="gnb_dropmenu_item">가방</a></li>
+                                            <li><a href="" class="gnb_dropmenu_item">애플워치</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>스포츠</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">러닝</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">트레이닝 &amp; 짐</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">축구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">골프</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">테니스</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">요가</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>브랜드</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">Nike Sportswear</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">NikeLab</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">Jordan</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">ACG</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="gnb_menu_list"><a href="" class="font_bebas">KIDS</a>
+                        <ul class="gnb_dropmenu_wrap">
+                            <li><a href=""><strong>신상품</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>플로럴 에센셜</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>썸머 에센셜</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>키즈 피크닉 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>패밀리 룩 컬렉션</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>조던 키즈</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>키즈 에어 포스 1</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item"><strong>베이비 샵</strong></a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">LAST CHANCE</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item font_bebas">SALE</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>신발</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">베이비(160mm 이하)</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">리틀키즈(165-220mm)</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">주니어(225-250mm)</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">라이프스타일</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">러닝</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">축구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">농구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">샌들 &amp; 슬리퍼</a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>의류</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">베이비 (0-4세)</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">리틀키즈 (4-7세)</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">주니어 (8-13세)</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">탑 &amp; 티셔츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">팬츠 &amp; 타이츠</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">트랙수트 &amp; 세트</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">후디 &amp; 크루</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">재킷 &amp; 베스트</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">스커트 &amp; 드레스</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">가방 &amp; 모자 &amp; 용품</a></a></li>
+                                </ul>
+                            </li>
+                            <li><a href=""><strong>스포츠</strong></a>
+                                <ul class="gnb_dropmenu">
+                                    <li><a href="" class="gnb_dropmenu_item">러닝</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">축구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">농구</a></li>
+                                    <li><a href="" class="gnb_dropmenu_item">테니스</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav cl>
+            <div class="serch_box">
+                <a href=""><i class="fas fa-search"></i></a>
+                <input type="search" placeholder="검색">
+            </div>
+        </div>
+    </div>
+    <script>
+        // 노드 준비
+const $nav = document.querySelector('.menu');
+const $lis = $nav.querySelectorAll('.menu > ul > li');
+for (let i = 0; i < $lis.length; i++) {
+	if ($lis[i].querySelector('ul')) {
+		$lis[i].className = 'sub';
+	}
+}
+// $lis.forEach( function( item, i, a, $lis ){ 
+// 	console.log(a)
+// 	if (item.querySelector('ul')) {
+// 		item.className = 'sub';
+// 	}
+// });
+
+$nav.addEventListener('mouseover', overWork);
+$nav.addEventListener('mouseout', outWork);
+
+let openedMenu;
+function overWork(ev) {
+	if (ev.target.tagName !== 'A') return;
+	
+	let crrli = ev.target.parentNode;
+	let subMenu = crrli.querySelector('ul');
+	if (subMenu) {
+		console.log('over!');
+		crrli.classList.add('active');
+		openedMenu = subMenu;
+	}
+}
+function outWork(ev) {
+	console.log('out!');
+	if (!openedMenu) return;
+	if ( !foldInCheck() ) {
+		openedMenu.parentNode.classList.remove('active');
+	}
+	function foldInCheck() {
+		// 도착한곳이 열렸던 곳이라면(return true) 내가족이까 닫지 마라.
+		let moveTo = ev.relatedTarget;
+		if (!moveTo) return;
+		while (moveTo.tagName !== 'HTML') {
+			if (openedMenu === moveTo) {
+				return true;
+			}
+			moveTo = moveTo.parentNode;
+		}
+		// 도착한곳이 열렸던 메뉴가 아니라면(return false) 내가족이 아니니까 닫아라.
+		return false;
+	}
+}
+
+
+// 서브메뉴 체크 함수
+
+
+// 이벤트 리스너
+
+
+// 주요 함수
+    </script>
+    </body>
+</html>

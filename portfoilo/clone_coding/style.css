@@ -1,0 +1,196 @@
+
+/* instagram_login */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap");
+html * {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #404142;
+  font-family: "Roboto", sans-serif;
+  letter-spacing: 0.05em;
+  width:100%;
+  text-align: center;
+  /* border:1px solid red; */
+}
+
+button {
+  padding: 13px;
+  border-radius: 30px;
+  border: none;
+}
+.sign_button {
+  width: 300px;
+  margin: 73px 0 23px 0;
+  background-color: yellow;
+  font-size: 15px;
+}
+.sign_in_wrap {
+  width: 306px;
+  padding: 50px 30px 100px;
+  border-radius: 30px;
+  background-color: #adcff7;
+  margin: 20px auto;
+}
+
+.sign_in > h3 {
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 83px;
+}
+.sign_in > form > input {
+  display: block;
+  width: 280px;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  margin-top: 40px;
+  font-size: 14px;
+}
+.sign_in > label {
+  font-size: 14px;
+}
+.sign_in__checkbox {
+  width: 15px;
+  height: 15px;
+}
+.sign_forgot {
+  color: darkblue;
+  font-size: 12px;
+  margin-top: 25px;
+  text-align: right;
+}
+.sign_or > h5 {
+  font-weight: 800;
+}
+.sign_or__column {
+  margin: 0 auto;
+}
+.sign_or__column > button {
+  margin: 40px 7px;
+  width: 136px;
+  font-size: 14px;
+}
+.facebook_btn {
+  color: #fff;
+  background-color: darkblue;
+}
+.twitter_btn {
+  background-color: #378ef2;
+  color: #fff;
+}
+.sign_or__question {
+  font-size: 12px;
+  line-height: 20px;
+}
+.sign_or__question > strong {
+  color: darkblue;
+}
+
+
+/* instagram_Apple AirPods */
+.wrap{
+  width:80%;
+  margin:0 auto;
+}
+h2{
+  font-weight: 400;
+  margin:50px 10px 10px 10px;
+}
+.section_wrap {
+    width: 516px;
+    /* border: 1px solid blue; */
+    padding: 20px;
+    background-color: #000;
+    margin:0 auto;
+  }
+  .section_apple-airpods {
+    /* border: 1px solid gray; */
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 25px;
+  }
+  .apple-airpods__title {
+    /* border: 1px solid royalblue; */
+    margin: 20px 0 22px 0;
+  }
+  .apple-airpods__surmmary {
+    color: gray;
+    /* border: 1px solid rebeccapurple; */
+  }
+  .section_apple-airpods > img {
+    vertical-align: top;
+    width: 462px;
+    height: 370px;
+  }
+  .apple-airpods__columns {
+    margin: 27px 0 26px 0;
+    overflow: hidden;
+  }
+  .column__price {
+    float: left;
+    /* border: 1px solid brown; */
+    font-size: 23px;
+  }
+  .column__mark {
+    float: right;
+    /* border: 1px solid brown; */
+    font-size: 20px;
+  }
+  
+  .column__mark > b {
+    color: #b8b6b6;
+  }
+  .column__mark > span > i {
+    color: orange;
+  }
+  .column__mark > span > .gray {
+    color: #b8b8b8;
+  }
+  .section_content2 {
+    text-align: center;
+    margin-top: 16px;
+    /* border: 1px solid gray; */
+    border-radius: 15px;
+    background-color: #fff;
+    padding: 25px;
+  }
+  .profile > img {
+    width: 110px;
+    height: 110px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+  }
+  .profile > h3 {
+    margin: 13px 0 24px 0;
+  }
+  .profile_wrap {
+    background: url("img/2.jpg") no-repeat 0 -180px;
+    background-size: 100%;
+    /* border: 1px solid red; */
+    border-radius: 10px;
+  }
+  .profile {
+    /* border: 1px solid red; */
+    padding-top: 235px;
+  }
+  .profile > b {
+    color: gray;
+    /* border: 1px solid red; */
+  }
+  .button_column > button {
+    width: 175px;
+    height: 70px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-top: 35px;
+  }
+  .button_column > button:first-child {
+    margin-right: 20px;
+    background-color: #000;
+    color: #fff;
+  }
+  

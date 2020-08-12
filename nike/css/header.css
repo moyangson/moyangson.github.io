@@ -1,0 +1,329 @@
+/* header{
+    border:1px solid red;
+} */
+.header_wrap{
+    text-align: center;
+    font-family:'Helvetica 35 Thin Regular',Arial,sans-serif;
+    border-bottom:1px solid #e5e5e5;  
+}
+.header_wrap::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header_wrap > .header_util{
+    padding-right: 20px;
+    overflow: hidden;
+    width: 100%;
+    border-bottom:1px solid #e5e5e5;
+}
+.header_wrap > .header_util::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.header_wrap > .header_util > .util_left{
+    /* border:1px solid lime;  */
+    float: left;
+    width: 50%;
+}
+.header_wrap > .header_util >.util_left > ul >li > a{
+    float: left;
+    min-width:45px;
+    padding:0 32px;
+    line-height: 38px;
+    color: #7e7e7e;
+    font-size: 12px;
+    display:block;
+    border-right:1px solid #e5e5e5;
+    position: relative;
+}
+
+.header_wrap > .header_util >.util_left > ul >li> a:hover,
+.header_wrap > .header_util > .util_right > ul > li > a:hover{
+    color: #111111;
+}
+.header_wrap > .header_util >.util_left > ul{ 
+    overflow: hidden;
+    /* border:1px solid black; */
+}
+
+.header_wrap > .header_util >.util_left > ul> li> .Jordan_logo::before{
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    padding:0 20px;
+    min-width:50px;
+    height: 50px;
+    background: url(../img/Jordan_logo.png) no-repeat;
+    background-position: center 10px;
+    background-size: 20%;
+    border-right: 1px solid #e5e5e5;
+    /* border:1px solid red; */
+}
+.header_wrap > .header_util >.util_left > ul> li> .Jordan_logo:hover::before{
+    position: absolute;
+    display: block;
+    content: '';
+    left: 0;
+    padding:0 20px;
+    min-width:50px;
+    height: 50px;
+    background: url(../img/Jordan_logo_hover.png) no-repeat;
+    background-position: center 10px;
+    background-size: 20%;
+}
+.header_wrap > .header_util >.util_left > ul> li> .converse_logo::before{
+    position: absolute;
+    display: block;
+    content: '';
+    left:91px;
+    padding:0 30px;
+    min-width:60px;
+    height: 60px;
+    background: url(../img/caverse_logo.png) no-repeat;
+    background-position: center 1px;
+    background-size: 60%;
+    border-right:1px solid #e5e5e5;
+    /* border:1px solid red; */
+}
+.header_wrap > .header_util >.util_left > ul> li> .converse_logo:hover::before{
+    position: absolute;
+    display: block;
+    content: '';
+    left:91px;
+    padding:0 30px;
+    min-width:60px;
+    height: 60px;
+    background: url(../img/caverse_logo_hover.png) no-repeat;
+    background-position: center 1px;
+    background-size:60%;
+    /* border:1px solid red; */
+}
+.header_wrap > .header_util > .util_right{
+    float: right;
+    /* border:1px solid black; */
+}
+.header_wrap > .header_util > .util_right > ul > li{
+    float: left;
+    /* border:1px solid lime; */
+}
+.header_wrap > .header_util > .util_right > ul > li > a{
+    padding:0 11px;
+    line-height: 38px;
+    color: #7e7e7e;
+    font-size: 12px;
+    display:inline-block;
+     /* border:1px solid blue; */
+}
+.header_wrap > .header_util > .util_right> ul >.login > a{
+    padding: 0;
+ }
+
+ .header_wrap > .header_util > .util_right> ul >.login > span{
+    font-size: 12px;
+    padding-right: 2px;
+    color:#7e7e7e;
+ }
+.fa-map-marker{
+    padding-right: 8px;
+    font-size:small;
+}
+.fa-shopping-cart{
+    font-size:medium;
+    /* border:1px solid red; */
+}
+
+/*메인메뉴 영역*/
+.btn {display: none;}
+.header_nav{
+    width:100%;
+    height:70px;
+    position: relative;
+    margin:0 auto;
+    /* border: 1px solid rebeccapurple; */
+}
+.header_nav::after{
+    content:'';
+    display: block;
+    clear: both;
+}
+
+.header_nav > h1 > .logo::before{
+    position: absolute;
+    display: block;
+    content: '';
+    top:0;
+    left: 0;
+    padding:100px;
+    margin-left:30px;
+    background: url(../img/Nike_logo.png) no-repeat;
+    background-size:33%;
+    /* border:1px solid green; */
+}
+
+/* 메뉴 */
+.menu {
+    margin:-22px;
+    /* border:1px solid red; */
+}
+.menu a {
+    text-decoration-line: none;  
+    color:#000;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'NanumSquareOTFRegular';
+}
+.menu .font_bebas{
+    font-family: 'Bebas Neue',Arial,sans-serif;
+    font-weight: 400;
+}
+.gnb_dropmenu_wrap .font_bebas, 
+.gnb_dropmenu .font_bebas{
+    font-size: 17px;
+}
+.menu > ul {
+    max-width: 380px; 
+	margin:0 auto; 
+    letter-spacing: 1px;
+   /* border:1px solid #f7f7f7; */
+}
+.menu > ul::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.menu > ul > li {
+	display:block; 
+    float: left;
+	font-size:16px; 
+	line-height:12px; 
+    /* border:1px solid red; */
+}
+
+/* 메뉴 제목 */
+.menu > ul > .gnb_menu_list_blind{
+    display: none;
+}
+.menu > ul > li > a {
+    padding:0 20px;
+    line-height:69px;
+    font-size: 17px;
+	color:black; 
+    display: block;   
+}
+
+
+/* 양쪽 여백조절*/
+.menu > ul > li > ul {
+	display: none; 
+    position:absolute; 
+    top:0;
+	left:0; 
+	right:0; 
+    padding:50px 15%; 
+    margin: 0 auto;
+	top:70px; 
+    text-align:left;
+}
+.menu > ul > li.active > ul {
+    display: block;
+    background-color:#fff; 
+    /* border:1px solid royalblue; */
+}
+.menu > ul > li.active{
+    border-bottom: 1px solid black;
+}
+.menu > ul > li > ul > li {
+    display: inline-block; 
+    text-align: left; 
+    vertical-align: top; 
+    margin-right: 30px;
+    /* border:1px solid lime;  */
+}
+.menu > ul > li > ul >li:nth-child(2)::before,
+.menu > ul > li > ul >li:nth-child(4)::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top:50px;
+    border-left:1px solid #e5e5e5;
+    height:75%;
+}
+
+.menu > ul > li > ul > li > a {
+    font-family: "Noto Sans KR", "맑은 고딕", serif, Arial;
+    padding-left: 30px;
+    /* border:1px solid blue;  */
+}
+.gnb_dropmenu_wrap{
+    position: relative;
+    left:150px; 
+    border: 1px solid #e5e5e5;
+}
+.gnb_dropmenu_wrap > .gnb_dropmenu{
+    border-left: 1px solid #e5e5e5;
+}
+.menu > ul > li > ul > li > ul > li, .menu .gnb_dropmenu_wrap_supplies > ul > li {
+    margin:12px 0;
+}
+.menu > ul > li > ul > li > ul{
+    padding:0;
+    position: relative;
+}
+.menu > ul > li > ul > li > ul > li> a, .menu .gnb_dropmenu_wrap_supplies > ul > li > a{
+    font-size: 13px;
+    padding-left: 30px;
+    /* border:1px solid red; */
+}
+.menu .gnb_dropmenu_wrap_supplies > ul{
+    padding:0;
+}
+
+.menu  li  a  strong{
+    font-family: "Noto Sans KR", "맑은 고딕", serif, Arial;
+    font-weight: bolder;
+    font-size: 16px;
+      /* border:1px solid lime; */
+}
+
+/* serch_box */
+.header_nav > .serch_box{
+    position: absolute;
+    top:15px;
+    right: 30px;
+    padding:10px 20px 10px 30px;
+    border-radius: 2px;   
+    font-size: 14px;
+    line-height: 1;
+    border:1px solid #e5e5e5;
+}
+.header_nav> .serch_box > a > .fa-search{
+    color: #333;
+     /* border:1px solid red; */
+}
+.header_nav> .serch_box > a > .fa-shopping-cart{
+    display: none;
+}
+.header_nav> .serch_box > .btn_sitemap{
+    display: none;
+    position: absolute;
+    top:0;
+    right: 0;
+}
+.header_nav> .serch_box > input{
+    text-align: left;
+    border: none;
+    outline: none;
+}
+/* 버튼 */
+.header_nav.active >.btn_sitemap .btn_line.first{
+     transform: rotate(45deg) translate(0, 0);
+     transform-origin: left top;
+}
+.header_nav.active >.btn_sitemap .btn_line.last{
+     transform: rotate(-45deg) translate(-3px, 3px);
+    transform-origin: left bottom;
+}

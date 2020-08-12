@@ -1,0 +1,105 @@
+/* 421이상 768이하 */
+@media screen and (min-width:421px) and (max-width: 768px){
+    body{
+        background-color:green;
+    }
+    .header_util{
+      display: none;
+    }
+    main{
+      padding:0 10px;
+    }
+    .main_wrap > section > div > p,
+    .main_wrap > section > div > p > a{
+      font-size: 20px;
+    }
+    .menu{
+      display: none;
+    }
+
+
+
+    .main_wrap >.trending_now > article > figcaption > picture > img{
+      transform-origin: center;
+      transform: translateX(-32%);
+      border:1px solid green;
+  }
+
+  }
+  /* 768이이상  960이하*/
+  @media screen and (min-width:768px)and (max-width: 960px){
+    body{
+       background-color:blue;
+    }
+    .header_wrap{
+      border:1px solid red;
+      height: 59px;
+    }
+    .header_util{
+        display: none;
+      }
+    .header_nav > h1 > .logo::before{
+      position: fixed;
+      margin-left: 20px;
+      background-position:0 -5px;
+    }
+    .header_nav > .serch_box{
+      width:50%;
+      top:-13px;
+      right:20px;
+      position: relative;
+      right:0;
+      /* border:none; */
+    }
+    .header_nav > .serch_box > input{
+      display: none;
+    }
+    .header_nav> .serch_box > a > .fa-search{
+     display: inline-block;
+     font-size: 22px;
+    }
+    .header_nav> .serch_box > a > .fa-shopping-cart{
+      display: inline-block;
+    }
+    .serch_box > .btn_sitemap > .btn_line {
+      margin-bottom: 5px;
+      display: block;
+      width:25px;
+      height: 2px;
+      background-color: #333;
+      -webkit-transition: all .3s;
+      transition: all .3s;
+      position: absolute;
+      top:20px;
+      right: 20px;
+
+    }
+    button:hover {cursor: pointer;}
+    .header_nav > .serch_box > .serch_box{
+      display:block;
+    }
+    main{
+        padding:0 10px;
+      }
+    .menu{
+      display: none;
+    }
+    .main_wrap >.trending_now > article{
+
+    }
+
+
+
+    .main_wrap >.trending_now > article > figcaption > picture > img{
+      transform-origin: center;
+      transform: translateX(-27%);
+      border:1px solid green;
+  }
+
+  }
+   /* 960이상 */
+  @media screen and (min-width:960px){
+
+  }
+ 
+ 
