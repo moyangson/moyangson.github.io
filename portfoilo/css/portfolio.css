@@ -194,9 +194,7 @@ img {border:none;border-style: none}
 .description header{
   top:0;
   margin-left: -40%;
-  text-align: left;
-  border:1px solid red;
-  
+  text-align: left;  
 }
 .content p
 {
