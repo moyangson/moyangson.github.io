@@ -194,6 +194,7 @@ img {border:none;border-style: none}
 .description header{
   top:0;
   margin-left: -29%;
+  padding-left: 10px;
   text-align: left;  
   border: 1px solid red;
 }
