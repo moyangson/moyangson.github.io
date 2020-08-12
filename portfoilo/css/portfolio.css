@@ -176,7 +176,7 @@ img {border:none;border-style: none}
 .description > ul > li > ul > li > a{
   float: left;
   margin:2px 2px 0 2px;
-  font-size: 14px;
+  font-size: 1rem;
   color:#666666;
 }
 .description > ul > li > ul > li > a:hover{
