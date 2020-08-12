@@ -195,6 +195,7 @@ img {border:none;border-style: none}
   top:0;
   margin-left: -30%;
   text-align: left;  
+  border: 1px solid red;
 }
 .content p
 {
