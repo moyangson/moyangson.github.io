@@ -184,7 +184,7 @@ img {border:none;border-style: none}
 }
 .content header,
 .description header {
-  font-size:1.4em;
+  font-size:1.4rem;
   letter-spacing: 0.5px;
   font-weight: 600;
   color:blue;
