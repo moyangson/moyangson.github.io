@@ -193,8 +193,7 @@ img {border:none;border-style: none}
 }
 .description header{
   top:0;
-  margin-left: -29%;
-  transform: translateX(15%);
+  transform: translateX(39%);
   text-align: left;  
   border: 1px solid red;
 }
