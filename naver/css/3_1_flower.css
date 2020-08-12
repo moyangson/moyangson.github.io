@@ -1,0 +1,126 @@
+#wrap{
+    padding:81px 0 160px;
+}
+.section_wrap{
+    /* border:1px solid tomato; */
+    width:100%;
+    letter-spacing: -0.2px;
+    
+}
+.content_top_menu{
+    padding:0 0 36px 30px;
+    max-width:1600px;
+    /* border:1px solid blue; */
+    margin:0 auto;
+}
+.content_top_menu li{
+    display: inline-block;
+    margin-top:-2px;
+    color:#878890;
+    font-size: 12px;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    position: relative;
+}
+.content_top_menu li span{
+    color:#333;
+}
+.content_top_menu li a{
+    color:#878890;
+    padding:0 5px;
+    margin-top:-2px;
+}
+.content_top_menu li::after{
+    content: ' \003E';
+    font-size: 11px;
+}
+.content_top_menu li:last-child::after{
+    content: '';
+}
+.content_title{
+    text-align: center;
+}
+.content_title h2{
+    width:100%;
+    color:#212121;
+    font-size: 42px;
+    font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare-EB", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    padding-bottom: 30px;
+    letter-spacing: -2.5px;
+}
+.content_title P{
+    width:100%;
+    color:#333;
+    font-size: 20px;
+    font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    -webkit-font-family: "NanumSquare", "나눔고딕", "Dotum", "돋움", "Helvetica", "Arial", "AppleSDGothicNeo", sans-serif;
+    padding-bottom: 25px;
+    
+}
+.content_bg{
+    width:100%;
+    /* border:1px solid royalblue; */
+}
+.flower_info{
+    max-width: 1120px;
+    margin:74px auto 120px;
+    /* border:1px solid rebeccapurple; */
+}
+.flower_info article{
+    margin:0 auto;
+}
+.flower_info  article::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.flower_info p{
+    /* border:1px solid red; */
+    width:530px;
+}
+.flower_info p:first-child{
+    padding-right:30px;
+    float: left;
+    width: 50%;
+}
+.flower_info p:last-child{
+    width:50%;
+    padding-left:30px;
+    float: right;
+}
+.flowwer_info_btn{
+    width:100%;
+    height:46px;
+    margin-top:24px;
+}
+.flowwer_info_btn a{
+    display:block;
+    /* border:1px solid red; */
+    float:right;
+    line-height: 46px;
+    margin:0 16px;
+    position: relative;
+    padding-right: 66px;
+}
+.flowwer_info_btn a::after{
+    content: '';
+    display: block;
+    clear: both;
+    position: absolute;
+    width:52px;
+    height: 52px;
+    right:0;
+    top:0;
+    background:url(../img/sprite.png) no-repeat;
+    background-size: 474px 1250px;
+    -webkit-background-size:474px 1250px;
+    background-position:-395px -48px; 
+    /* border:1px solid rebeccapurple;   */
+}
+.flowwer_info_btn a:hover .flowwer_info_btn a::after{
+    background-position:-395px -48px;   
+}
+.flower_info_bg{
+    width: 100%;
+}
