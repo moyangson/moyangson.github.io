@@ -248,7 +248,7 @@ img {border:none;border-style: none}
 .avatar> img{
     position: absolute;
     width:150%;
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .button {
